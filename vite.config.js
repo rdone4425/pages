@@ -6,15 +6,13 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': './src'
     }
   },
   server: {
     proxy: {
       '/api': {
-        target: 'https://shuqian.ferr01.workers.dev',
-        changeOrigin: true,
-        secure: false
+        target: 'https://shuqian.ferr01.workers.dev'
       }
     }
   }
