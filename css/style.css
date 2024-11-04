@@ -1,0 +1,87 @@
+/* 导航栏样式 */
+.navbar {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    height: 56px;
+}
+
+.navbar-brand {
+    padding: 0.75rem;
+}
+
+/* 左侧导航栏样式 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 56px; /* 与导航栏高度一致 */
+    height: calc(100vh - 56px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1rem 0;
+}
+
+/* 导航菜单项样式 */
+.nav-item {
+    margin: 4px 12px;
+}
+
+.nav-link {
+    color: #495057;
+    border-radius: 6px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+.nav-link.active {
+    background-color: #0d6efd;
+    color: white !important;
+    box-shadow: 0 2px 6px rgba(13, 110, 253, 0.2);
+}
+
+/* 导航图标样式 */
+.nav-link i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* 选中状态的图标颜色 */
+.nav-link.active i {
+    color: white;
+}
+
+/* 主内容区域样式 */
+main {
+    margin-left: 16.666667%; /* col-md-2 的宽度 */
+    padding: 56px 1.5rem 1.5rem;
+}
+
+@media (min-width: 992px) {
+    main {
+        margin-left: 16.666667%;
+    }
+}
+
+/* 统计卡片样式 */
+.stats-card {
+    transition: transform 0.2s;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+} 
